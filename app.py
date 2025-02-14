@@ -12,8 +12,8 @@ st.title("My first ML App (Study on Imbalanced Data Classification sick_euthyroi
 features = []
 
 title = st.text_input("Text Input, Enter 42 features with comma separated")
-st.write("Features Input are", title.split(','))
-features = title.split(',')
+st.write("example; feature_1,feature_2, .... , feature_n")
+features = [float(i) for i in title.split(',')]
 
 # Prediction
 if st.button("Predict"):
