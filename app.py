@@ -10,9 +10,10 @@ st.title("My first ML App (Study on Imbalanced Data Classification sick_euthyroi
 
 # Input fields
 features = []
-for i in range(42):  # Adjust based on dataset
-    value = st.number_input(f"Feature_{i}", value=0.0)
-    features.append(value)
+
+title = st.text_input("Text Input", "Enter 42 features with comma separated")
+#st.write("The current movie title is", title)
+features = title.split(',')
 
 # Prediction
 if st.button("Predict"):
