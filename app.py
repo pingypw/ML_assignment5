@@ -11,8 +11,8 @@ st.title("My first ML App (Study on Imbalanced Data Classification sick_euthyroi
 # Input fields
 features = []
 
-title = st.text_input("Text Input", "Enter 42 features with comma separated")
-#st.write("The current movie title is", title)
+title = st.text_input("Text Input, Enter 42 features with comma separated")
+st.write("Features Input are", title.split(','))
 features = title.split(',')
 
 # Prediction
